@@ -4,9 +4,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
-import at.bitfire.dav4android.Constants.log
+import at.bitfire.dav4jvm.Constants.log
 import org.xmlpull.v1.XmlPullParser
 import java.io.Serializable
 import java.util.*

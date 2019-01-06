@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android.exception
+package at.bitfire.dav4jvm.exception
 
 import okhttp3.*
 import org.junit.Assert.assertTrue

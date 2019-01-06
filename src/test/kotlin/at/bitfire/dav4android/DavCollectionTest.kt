@@ -4,11 +4,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
-import at.bitfire.dav4android.exception.HttpException
-import at.bitfire.dav4android.property.GetETag
-import at.bitfire.dav4android.property.SyncToken
+import at.bitfire.dav4jvm.exception.HttpException
+import at.bitfire.dav4jvm.property.GetETag
+import at.bitfire.dav4jvm.property.SyncToken
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer

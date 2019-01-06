@@ -4,15 +4,15 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
-import at.bitfire.dav4android.exception.DavException
-import at.bitfire.dav4android.exception.HttpException
-import at.bitfire.dav4android.exception.PreconditionFailedException
-import at.bitfire.dav4android.property.DisplayName
-import at.bitfire.dav4android.property.GetContentType
-import at.bitfire.dav4android.property.GetETag
-import at.bitfire.dav4android.property.ResourceType
+import at.bitfire.dav4jvm.exception.DavException
+import at.bitfire.dav4jvm.exception.HttpException
+import at.bitfire.dav4jvm.exception.PreconditionFailedException
+import at.bitfire.dav4jvm.property.DisplayName
+import at.bitfire.dav4jvm.property.GetContentType
+import at.bitfire.dav4jvm.property.GetETag
+import at.bitfire.dav4jvm.property.ResourceType
 import okhttp3.MediaType
 import okhttp3.OkHttpClient
 import okhttp3.RequestBody

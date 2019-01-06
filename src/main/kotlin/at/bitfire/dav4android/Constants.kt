@@ -4,13 +4,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
 import java.util.logging.Logger
 
 object Constants {
 
-    var log = Logger.getLogger("dav4android")!!
+    var log = Logger.getLogger("dav4jvm")!!
 
     const val okhttpVersion = BuildConfig.okhttpVersion
 

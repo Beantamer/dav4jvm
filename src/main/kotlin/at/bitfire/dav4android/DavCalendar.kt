@@ -4,10 +4,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
-import at.bitfire.dav4android.exception.DavException
-import at.bitfire.dav4android.exception.HttpException
+import at.bitfire.dav4jvm.exception.DavException
+import at.bitfire.dav4jvm.exception.HttpException
 import okhttp3.*
 import java.io.IOException
 import java.io.StringWriter

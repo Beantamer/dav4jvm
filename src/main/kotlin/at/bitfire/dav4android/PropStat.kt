@@ -6,9 +6,9 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
-import at.bitfire.dav4android.Constants.log
+import at.bitfire.dav4jvm.Constants.log
 import okhttp3.Protocol
 import okhttp3.internal.http.StatusLine
 import org.xmlpull.v1.XmlPullParser

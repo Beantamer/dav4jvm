@@ -4,12 +4,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android.property
+package at.bitfire.dav4jvm.property
 
-import at.bitfire.dav4android.Constants
-import at.bitfire.dav4android.Property
-import at.bitfire.dav4android.PropertyFactory
-import at.bitfire.dav4android.XmlUtils
+import at.bitfire.dav4jvm.Constants
+import at.bitfire.dav4jvm.Property
+import at.bitfire.dav4jvm.PropertyFactory
+import at.bitfire.dav4jvm.XmlUtils
 import org.xmlpull.v1.XmlPullParser
 import java.util.logging.Level
 import java.util.regex.Pattern

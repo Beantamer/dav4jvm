@@ -6,10 +6,10 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
-import at.bitfire.dav4android.Constants.log
-import at.bitfire.dav4android.property.ResourceType
+import at.bitfire.dav4jvm.Constants.log
+import at.bitfire.dav4jvm.property.ResourceType
 import okhttp3.HttpUrl
 import okhttp3.Protocol
 import okhttp3.internal.http.StatusLine
@@ -200,7 +200,7 @@ data class Response(
             }
 
             callback(
-                    at.bitfire.dav4android.Response(
+                    Response(
                             location,
                             href!!,
                             status,

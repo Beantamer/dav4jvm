@@ -4,11 +4,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android.exception
+package at.bitfire.dav4jvm.exception
 
-import at.bitfire.dav4android.Constants
-import at.bitfire.dav4android.Error
-import at.bitfire.dav4android.XmlUtils
+import at.bitfire.dav4jvm.Constants
+import at.bitfire.dav4jvm.Error
+import at.bitfire.dav4jvm.XmlUtils
 import okhttp3.MediaType
 import okhttp3.Response
 import okio.Buffer

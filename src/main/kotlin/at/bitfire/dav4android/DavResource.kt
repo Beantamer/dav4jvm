@@ -4,10 +4,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
-import at.bitfire.dav4android.exception.*
-import at.bitfire.dav4android.property.SyncToken
+import at.bitfire.dav4jvm.exception.*
+import at.bitfire.dav4jvm.property.SyncToken
 import okhttp3.*
 import okhttp3.Response
 import org.xmlpull.v1.XmlPullParser
@@ -462,7 +462,7 @@ open class DavResource @JvmOverloads constructor(
                 if (eventType == XmlPullParser.START_TAG && parser.depth == depth + 1 && parser.namespace == XmlUtils.NS_WEBDAV)
                     when (parser.name) {
                         "response" ->
-                            at.bitfire.dav4android.Response.parse(parser, location, callback)
+                            at.bitfire.dav4jvm.Response.parse(parser, location, callback)
                         "sync-token" ->
                             XmlUtils.readText(parser)?.let {
                                 responseProperties += SyncToken(it)

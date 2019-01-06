@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android
+package at.bitfire.dav4jvm
 
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException

@@ -4,9 +4,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package at.bitfire.dav4android.exception
+package at.bitfire.dav4jvm.exception
 
-import at.bitfire.dav4android.Constants
+import at.bitfire.dav4jvm.Constants
 import okhttp3.Response
 import okhttp3.internal.http.HttpDate
 import java.net.HttpURLConnection
