@@ -21,6 +21,8 @@ class UrlUtilsTest {
 
         assertFalse(UrlUtils.equals(HttpUrl.parse("http://host/resource")!!, HttpUrl.parse("http://host/resource/")!!))
         assertFalse(UrlUtils.equals(HttpUrl.parse("http://host/resource")!!, HttpUrl.parse("http://host:81/resource")!!))
+
+        assertTrue(UrlUtils.equals(HttpUrl.parse("http://host/%5bresource%5d/")!!, HttpUrl.parse("http://host/%5Bresource%5D/")!!))
     }
 
     @Test
@@ -50,5 +52,4 @@ class UrlUtilsTest {
         assertEquals(HttpUrl.parse("http://host/resource/")!!, UrlUtils.withTrailingSlash(HttpUrl.parse("http://host/resource")!!))
         assertEquals(HttpUrl.parse("http://host/resource/")!!, UrlUtils.withTrailingSlash(HttpUrl.parse("http://host/resource/")!!))
     }
-
 }

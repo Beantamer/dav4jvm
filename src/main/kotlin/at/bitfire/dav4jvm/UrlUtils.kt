@@ -14,8 +14,8 @@ object UrlUtils {
 
     fun equals(url1: HttpUrl, url2: HttpUrl): Boolean {
         // if okhttp thinks the two URLs are equal, they're in any case
-        // (and it's a simple String comparison)
-        if (url1 == url2)
+        // (and it's a simple String comparison, ignoring case)
+        if (url1.toString().equals(url2.toString(), true))
             return true
 
         val uri1 = url1.uri()
@@ -64,5 +64,4 @@ object UrlUtils {
         else
             url.newBuilder().addPathSegment("").build()
     }
-
 }

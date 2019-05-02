@@ -25,6 +25,6 @@ Email: [play@bitfire.at](mailto:play@bitfire.at) (please use the forum instead)
 ## Contributors
 
   * Ricki Hirner (initial contributor)
-  * David González Verdugo (dgonzalez@owncloud.com)
+  * David González Verdugo (https://github.com/davigonz)
   * Matt Jacobsen (https://gitlab.com/mattjacobsen)
 
