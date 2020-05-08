@@ -228,15 +228,20 @@ open class DavResource @JvmOverloads constructor(
      * @throws HttpException on HTTP error
      */
     @Throws(IOException::class, HttpException::class)
-    fun put(body: RequestBody, ifMatchETag: String?, ifNoneMatch: Boolean, callback: (Response) -> Unit) {
+    fun put(body: RequestBody, ifMatchETag: String?, quoteETag: Boolean, ifNoneMatch: Boolean, callback: (Response) -> Unit) {
         followRedirects {
             val builder = Request.Builder()
                     .put(body)
                     .url(location)
 
-            if (ifMatchETag != null)
-                // only overwrite specific version
-                builder.header("If-Match", QuotedStringUtils.asQuotedString(ifMatchETag))
+            if (ifMatchETag != null) {
+                if (quoteETag) {
+                    // only overwrite specific version
+                    builder.header("If-Match", QuotedStringUtils.asQuotedString(ifMatchETag))
+                } else {
+                    builder.header("If-Match", ifMatchETag)
+                }
+            }
             if (ifNoneMatch)
                 // don't overwrite anything existing
                 builder.header("If-None-Match", "*")
